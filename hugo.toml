@@ -5,7 +5,7 @@ theme = ["hugo-embed-pdf-shortcode", "typo"]
 pluralizeListTitles = "false"
 
 [params]
-theme = 'light'
+theme = 'auto'
 colorPalette = 'catpuccin'
 showFooter = true
 footerContent = "All content licensed under CC BY-SA 4.0 license unless otherwise stated. Copyright © 2024 **Ivano D’Apice**."
