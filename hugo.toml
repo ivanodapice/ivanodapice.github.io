@@ -12,12 +12,17 @@ singleDateFormat = '2 January 2006'
 
 [params.giscus]
 enable = true
-repo = "https://github.com/ivanodapice/ivanodapice.github.io"
-repoid = "MDEwOlJlcG9zaXRvcnk0MDQ2MTAzNjY="
-category = "General"
-categoryid = "DIC_kwDOGB3dPs4CjGfo"
-mapping = "pathname"
-theme = "preferred_color_scheme" 
+repo="ivanodapice/ivanodapice.github.io"
+repoid="MDEwOlJlcG9zaXRvcnk0MDQ2MTAzNjY="
+category="General"
+categoryid="DIC_kwDOGB3dPs4CjGfo"
+mapping="url"
+strict="0"
+reactionsenabled="1"
+emitmetadata="0"
+inputposition="bottom"
+theme="preferred_color_scheme"
+crossorigin="anonymous"
 
 [markup]
 [markup.highlight]
