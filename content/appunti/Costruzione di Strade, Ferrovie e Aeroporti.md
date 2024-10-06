@@ -7,9 +7,5 @@ math = true
 hideBackToTop = true
 +++
 
-heyuyyyudaisofhboj
-adsf
-asdf
-sd
 
-{{< embed-pdf url="http://ivanodapice.github.io/appunti/strade-e-bim.pdf/" >}}
+{{< embed-pdf url="https://ivanodapice.github.io/appunti/strade-e-bim.pdf/" >}}
