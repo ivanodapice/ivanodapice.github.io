@@ -4,7 +4,7 @@ title = 'Ivano D’Apice'
 theme = ["hugo-embed-pdf-shortcode", "typo"]
 
 [params]
-theme = 'dark'
+theme = 'light'
 colorPalette = 'gruvebox'
 showFooter = true
 footerContent = "Your **custom** md `footer`"

@@ -7,4 +7,4 @@ math = true
 hideBackToTop = true
 +++
 
-{{< embed-pdf url="/appunti/strade-e-bim.pdf/" >}}
+{{< embed-pdf url="https://ivanodapice.github.io/appunti/strade-e-bim.pdf" >}}
