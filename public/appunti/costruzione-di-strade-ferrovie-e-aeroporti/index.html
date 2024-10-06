@@ -49,7 +49,7 @@
   
   
 
-  <body class="dark">
+  <body class="light">
 
     <div class="content">
       <header>
@@ -214,36 +214,36 @@
   @-webkit-keyframes spin {
     to { -webkit-transform: rotate(360deg); }
   }
-  </style><div class="embed-pdf-container" id="embed-pdf-container-d2be5e05">
-    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-d2be5e05">
-        <div class="pdf-loading" id="pdf-loading-d2be5e05"></div>
+  </style><div class="embed-pdf-container" id="embed-pdf-container-7bf7cce0">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-7bf7cce0">
+        <div class="pdf-loading" id="pdf-loading-7bf7cce0"></div>
     </div>
     <div id="overlayText">
-      <a href="/appunti/strade-e-bim.pdf/" aria-label="Download" download>
+      <a href="https://ivanodapice.github.io/appunti/strade-e-bim.pdf" aria-label="Download" download>
         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
             <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
         </svg>
       </a>
     </div>
-    <canvas class="pdf-canvas" id="pdf-canvas-d2be5e05"></canvas>
+    <canvas class="pdf-canvas" id="pdf-canvas-7bf7cce0"></canvas>
 </div>
 
-<div class="pdf-paginator" id="pdf-paginator-d2be5e05">
-    <button id="pdf-prev-d2be5e05">Previous</button>
-    <button id="pdf-next-d2be5e05">Next</button> &nbsp; &nbsp;
+<div class="pdf-paginator" id="pdf-paginator-7bf7cce0">
+    <button id="pdf-prev-7bf7cce0">Previous</button>
+    <button id="pdf-next-7bf7cce0">Next</button> &nbsp; &nbsp;
     <span>
-      <span class="pdf-pagenum" id="pdf-pagenum-d2be5e05"></span> / <span class="pdf-pagecount" id="pdf-pagecount-d2be5e05"></span>
+      <span class="pdf-pagenum" id="pdf-pagenum-7bf7cce0"></span> / <span class="pdf-pagecount" id="pdf-pagecount-7bf7cce0"></span>
     </span>
-    <a class="pdf-source" id="pdf-source-d2be5e05" href="/appunti/strade-e-bim.pdf/">[pdf]</a>
+    <a class="pdf-source" id="pdf-source-7bf7cce0" href="https://ivanodapice.github.io/appunti/strade-e-bim.pdf">[pdf]</a>
 </div>
 
 <noscript>
-View the PDF file <a class="pdf-source" id="pdf-source-noscript-d2be5e05" href="/appunti/strade-e-bim.pdf/">here</a>.
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-7bf7cce0" href="https://ivanodapice.github.io/appunti/strade-e-bim.pdf">here</a>.
 </noscript>
 
 <script type="text/javascript">
     (function(){
-    var url = '\/appunti\/strade-e-bim.pdf\/';
+    var url = 'https:\/\/ivanodapice.github.io\/appunti\/strade-e-bim.pdf';
 
     var hidePaginator = "" === "true";
     var hideLoader = "" === "true";
@@ -262,10 +262,10 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-d2be5e05" href="
         pageRendering = false,
         pageNumPending = null,
         scale = 3,
-        canvas = document.getElementById('pdf-canvas-d2be5e05'),
+        canvas = document.getElementById('pdf-canvas-7bf7cce0'),
         ctx = canvas.getContext('2d'),
-        paginator = document.getElementById("pdf-paginator-d2be5e05"),
-        loadingWrapper = document.getElementById('pdf-loadingWrapper-d2be5e05');
+        paginator = document.getElementById("pdf-paginator-7bf7cce0"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-7bf7cce0');
 
 
     
@@ -303,7 +303,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-d2be5e05" href="
       });
 
       
-      document.getElementById('pdf-pagenum-d2be5e05').textContent = num;
+      document.getElementById('pdf-pagenum-7bf7cce0').textContent = num;
     }
 
     
@@ -347,7 +347,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-d2be5e05" href="
       pageNum--;
       queueRenderPage(pageNum);
     }
-    document.getElementById('pdf-prev-d2be5e05').addEventListener('click', onPrevPage);
+    document.getElementById('pdf-prev-7bf7cce0').addEventListener('click', onPrevPage);
 
     
 
@@ -358,14 +358,14 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-d2be5e05" href="
       pageNum++;
       queueRenderPage(pageNum);
     }
-    document.getElementById('pdf-next-d2be5e05').addEventListener('click', onNextPage);
+    document.getElementById('pdf-next-7bf7cce0').addEventListener('click', onNextPage);
 
     
 
     pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
       pdfDoc = pdfDoc_;
       var numPages = pdfDoc.numPages;
-      document.getElementById('pdf-pagecount-d2be5e05').textContent = numPages;
+      document.getElementById('pdf-pagecount-7bf7cce0').textContent = numPages;
 
       
       if(pageNum > numPages) {

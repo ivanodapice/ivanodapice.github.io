@@ -2,6 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Ivano D’Apice'
 theme = ["hugo-embed-pdf-shortcode", "typo"]
+pluralizeListTitles = "false"
 
 [params]
 theme = 'light'
