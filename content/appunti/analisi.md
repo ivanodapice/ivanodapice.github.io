@@ -123,3 +123,5 @@ E infine due risorse relative ad esercizi vari:
 {{< embed-pdf url="https://ivanodapice.github.io/appunti/Analisi-Matematica-2-Esercizi-(M.Boella).pdf" >}}
 
 {{< embed-pdf url="https://ivanodapice.github.io/appunti/ESERCIZIO-SUL-PROBLEMA-DI-CAUCHY-PER-UN'EQUAZIONE-DIFFERENZIALE -LINEARE-A-COEFFICIENTI-COSTANTI.pdf" >}}
+
+> Corso Triennale di **Ingegneria Edile** (L-23), Università degli Studi di Napoli **Federico II**

@@ -11,6 +11,10 @@ showFooter = true
 footerContent = "All content licensed under CC BY-SA 4.0 license unless otherwise stated. Copyright © 2024 **Ivano D’Apice**."
 singleDateFormat = '2 January 2006'
 paginationSize = 100
+homeIntroTitle = 'Benvenuti nel mio sito web.'
+homeIntroContent = """
+Se per qualsiasi ragione ci fosse bisogno di contattarmi, sotto ci sono le mie pagine.
+"""
 
 [params.giscus]
 enable = true
@@ -30,6 +34,22 @@ crossorigin="anonymous"
 [markup.highlight]
 style = 'algol'
 
+[[params.social]]
+name = "linkedin"
+url = "https://it.linkedin.com/in/ivanodapice"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/ivanodapice"
+
+[[params.social]]
+name = "telegram"
+url = "https://t.me/sonoivano"
+
+[[params.social]]
+    name = "email"
+    url  = "mailto:ivanodapice@hotmail.com"
+
 [[params.menu]]
 name = "home"
 url = "/"
@@ -38,5 +58,10 @@ url = "/"
 name = "appunti"
 url = "/appunti"
 
+[[params.menu]]
+name = "progetti"
+url = "/progetti"
+
 [permalinks]
   appunti = '/appunti/:slug'
+  progetti = '/progetti/:slug'
