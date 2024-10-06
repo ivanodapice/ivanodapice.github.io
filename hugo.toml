@@ -1,0 +1,23 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Ivano D’Apice'
+theme = 'typo'
+
+[params]
+theme = 'dark'
+colorPalette = 'gruvebox'
+showFooter = true
+footerContent = "Your **custom** md `footer`"
+
+[markup]
+[markup.highlight]
+style = 'algol'
+
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "appunti"
+url = "/"
+
