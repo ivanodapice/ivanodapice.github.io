@@ -6,10 +6,11 @@ pluralizeListTitles = "false"
 
 [params]
 theme = 'light'
-colorPalette = 'gruvebox'
+colorPalette = 'catpuccin'
 showFooter = true
-footerContent = "Your **custom** md `footer`"
+footerContent = "All content licensed under CC BY-SA 4.0 license unless otherwise stated. Copyright © 2024 **Ivano D’Apice**."
 singleDateFormat = '2 January 2006'
+paginationSize = 100
 
 [params.giscus]
 enable = true

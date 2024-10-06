@@ -35,7 +35,7 @@
 
 
 
-<link rel="stylesheet" href="/assets/combined.min.50808fc40f2fd8259e11a92bc8f977928f1905a88df0195511af93ef3527e880.css" media="all">
+<link rel="stylesheet" href="/assets/combined.min.66ed288e713700859ba6a96e0b16ff08246cb2096b1ac7749bf0627a619f0681.css" media="all">
 
 
 
@@ -130,7 +130,8 @@
   
 
   <div class="single-content">
-    <script type="text/javascript" src= '/js/pdf-js/build/pdf.js'></script>
+    <p>Questi appunti sono stati presi a lezione col professore <strong>Gianluca Dell&rsquo;Acqua</strong> e sono predisposti per la risoluzione dei problemi numerici relativi alla progettazione urbanistica di strade.</p>
+<script type="text/javascript" src= '/js/pdf-js/build/pdf.js'></script>
 
 <style>
   #embed-pdf-container {
@@ -378,6 +379,174 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-7bf7cce0" href="
     })();
 </script>
 
+<p>Qui invece viene riportato, tramite una relazione di gruppo, tutto il percorso esercitativo lato <strong>software</strong> (OpenRoads Designer) svolto durante le lezioni.</p>
+<div class="embed-pdf-container" id="embed-pdf-container-31f47090">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-31f47090">
+        <div class="pdf-loading" id="pdf-loading-31f47090"></div>
+    </div>
+    <div id="overlayText">
+      <a href="https://ivanodapice.github.io/appunti/relazione-del-corso-di-strade-ferrovie-e-aeroporti.pdf" aria-label="Download" download>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+            <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+        </svg>
+      </a>
+    </div>
+    <canvas class="pdf-canvas" id="pdf-canvas-31f47090"></canvas>
+</div>
+
+<div class="pdf-paginator" id="pdf-paginator-31f47090">
+    <button id="pdf-prev-31f47090">Previous</button>
+    <button id="pdf-next-31f47090">Next</button> &nbsp; &nbsp;
+    <span>
+      <span class="pdf-pagenum" id="pdf-pagenum-31f47090"></span> / <span class="pdf-pagecount" id="pdf-pagecount-31f47090"></span>
+    </span>
+    <a class="pdf-source" id="pdf-source-31f47090" href="https://ivanodapice.github.io/appunti/relazione-del-corso-di-strade-ferrovie-e-aeroporti.pdf">[pdf]</a>
+</div>
+
+<noscript>
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-31f47090" href="https://ivanodapice.github.io/appunti/relazione-del-corso-di-strade-ferrovie-e-aeroporti.pdf">here</a>.
+</noscript>
+
+<script type="text/javascript">
+    (function(){
+    var url = 'https:\/\/ivanodapice.github.io\/appunti\/relazione-del-corso-di-strade-ferrovie-e-aeroporti.pdf';
+
+    var hidePaginator = "" === "true";
+    var hideLoader = "" === "true";
+    var selectedPageNum = parseInt("") || 1;
+
+    
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+    
+    if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "http:\/\/localhost:1313\/" + 'js/pdf-js/build/pdf.worker.js';
+
+    
+    var pdfDoc = null,
+        pageNum = selectedPageNum,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 3,
+        canvas = document.getElementById('pdf-canvas-31f47090'),
+        ctx = canvas.getContext('2d'),
+        paginator = document.getElementById("pdf-paginator-31f47090"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-31f47090');
+
+
+    
+    showPaginator();
+    showLoader();
+
+    
+
+    function renderPage(num) {
+      pageRendering = true;
+      
+      pdfDoc.getPage(num).then(function(page) {
+        var viewport = page.getViewport({scale: scale});
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+
+        
+        renderTask.promise.then(function() {
+          pageRendering = false;
+          showContent();
+
+          if (pageNumPending !== null) {
+            
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+      
+      document.getElementById('pdf-pagenum-31f47090').textContent = num;
+    }
+
+    
+
+    function showContent() {
+      loadingWrapper.style.display = 'none';
+      canvas.style.display = 'block';
+    }
+
+    
+
+    function showLoader() {
+      if(hideLoader) return
+      loadingWrapper.style.display = 'flex';
+      canvas.style.display = 'none';
+    }
+
+    
+
+    function showPaginator() {
+      if(hidePaginator) return
+      paginator.style.display = 'block';
+    }
+
+    
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    
+
+    function onPrevPage() {
+      if (pageNum <= 1) {
+        return;
+      }
+      pageNum--;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-prev-31f47090').addEventListener('click', onPrevPage);
+
+    
+
+    function onNextPage() {
+      if (pageNum >= pdfDoc.numPages) {
+        return;
+      }
+      pageNum++;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-next-31f47090').addEventListener('click', onNextPage);
+
+    
+
+    pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      var numPages = pdfDoc.numPages;
+      document.getElementById('pdf-pagecount-31f47090').textContent = numPages;
+
+      
+      if(pageNum > numPages) {
+        pageNum = numPages
+      }
+
+      
+      renderPage(pageNum);
+    });
+    })();
+</script>
+
+<blockquote>
+<p>Corso Triennale di <strong>Ingegneria Edile</strong> (L-23), Università degli Studi di Napoli <strong>Federico II</strong></p>
+</blockquote>
 
     
     <script src="https://giscus.app/client.js"
@@ -408,6 +577,35 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-7bf7cce0" href="
   
   
 
+<div class="single-pagination">
+    <hr />
+
+    <div class="flex">
+
+        <div class="single-pagination-prev">
+            
+            <div class="single-pagination-container-prev">
+                <div class="single-pagination-text">←</div>
+                <div class="single-pagination-text">
+                    <a href="/appunti/fondamenti-di-tecnica-urbanistica/">
+                        Fondamenti di Tecnica Urbanistica
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+        </div>
+
+    </div>
+
+    <hr />
+</div>
+
+
+
   
 
   
@@ -426,7 +624,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-7bf7cce0" href="
     
     
     
-    <p>Your <strong>custom</strong> md <code>footer</code></p>
+    <p>All content licensed under CC BY-SA 4.0 license unless otherwise stated. Copyright © 2024 <strong>Ivano D’Apice</strong>.</p>
     
 
 
