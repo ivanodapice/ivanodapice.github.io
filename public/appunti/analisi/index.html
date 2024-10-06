@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  dir="ltr">
+
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+<link rel="icon" type="image/ico" href="http://localhost:1313//favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313//favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="http://localhost:1313//android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313//apple-touch-icon.png">
+
+<meta name="description" content=""/>
+
+<title>
+    
+    Analisi | Ivano D’Apice
+    
+</title>
+
+<link rel="canonical" href="http://localhost:1313/appunti/analisi/"/>
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.66ed288e713700859ba6a96e0b16ff08246cb2096b1ac7749bf0627a619f0681.css" media="all">
+
+
+
+
+
+  </head>
+
+  
+
+  
+  
+  
+
+  <body class="light">
+
+    <div class="content">
+      <header>
+        
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">Ivano D’Apice</h1>
+
+    <div class="flex">
+        
+
+        
+        
+      
+        <p class="small ">
+            <a href="/" >
+                /home
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/appunti" >
+                /appunti
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+      </header>
+
+      <main class="main">
+        
+
+
+
+
+
+
+
+<div >
+
+  <div class="single-intro-container">
+
+    
+
+    <h1 class="single-title">Analisi</h1>
+    
+
+    
+
+    <p class="single-readtime">
+      
+      
+      
+      <time datetime="2024-10-06T06:37:53&#43;02:00">6 October 2024</time>
+      
+
+      
+    </p>
+
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div class="single-content">
+    <p>Tratteremo in questa pagina di una piccola parte di analisi I e di quasi ogni cosa ci si possa imbattere in Analisi II. Le due materie sono state trattate insieme al professore <strong>Basilio Messano</strong>.</p>
+<h1 id="massimi-e-minimi-primo-esempio">Massimi e minimi, primo esempio</h1>
+<p>$$f_{x}=x^3+3xy^2-15x-12y$$</p>
+<p>Calcoliamo le derivate prime :</p>
+<p>$$\cdot f_{x}=3x^{2}+3y^{2}-15$$</p>
+<p>$$=x^{2}+y^{2}-5$$</p>
+<p>$$\cdot f_{y}=6xy-12$$</p>
+<p>$$=xy-2$$</p>
+<p>Mettiamo al sistema le due derivate :</p>
+<p>$$\begin{Bmatrix}
+x^{2}+y^{2}=5\
+y=\frac{2}{x}
+\end{Bmatrix}$$
+$$\begin{Bmatrix}
+x^{2}+\frac{4}{x^{2}}=5\
+y=\frac{2}{x}
+\end{Bmatrix}$$</p>
+<p>Dopo aver risolto questo sistema troviamo due punti,</p>
+<p>$$P_1=(1,2)$$
+$$P_2=(-1,-2)$$</p>
+<p>Ora calcoliamo le derivate seconde :</p>
+<p>$$f_{xx}=6x$$
+$$f_{yy}=6x$$
+$$f_{xy}=6y$$</p>
+<p>Adesso calcoliamo gli hessiani nei due punti</p>
+<p>$$H(P_{1})=\begin{vmatrix}
+6x &amp; 6y\
+6y &amp; 6x
+\end{vmatrix}
+=36-144&lt;0$$</p>
+<p>Dato che il primo valore dell&rsquo;hessiano e&rsquo; positivo e il determinante e&rsquo; negativo, il punto P1 sara&rsquo; di sella</p>
+<p>$$H(P_{2})=\begin{vmatrix}
+6x &amp; 6y\
+6y &amp; 6x
+\end{vmatrix}
+=36-144&lt;0$$</p>
+<p>Cosi&rsquo; come in P1 avremo un punto di sella</p>
+<h1 id="massimi-e-minimi-secondo-e-ultimo-esempio">Massimi e minimi, secondo e ultimo esempio</h1>
+<p>$$f_{x,y}=e^y(4x^2+y^2)$$</p>
+<p>Calcoliamo le derivate prime :</p>
+<p>$$ f_{x}=8xe^{y}$$
+$$ f_{y}=e^{y}(4x^2+y^2+2y)$$
+$$\begin{Bmatrix}
+8xe^{y}=0\
+e^{y}(4x^2+y^2+2y)=0
+\end{Bmatrix}$$</p>
+<p>$$\begin{Bmatrix}
+8x=0\
+4x^2+y^2+2y=0
+\end{Bmatrix}$$</p>
+<p>$$\begin{Bmatrix}
+x=0\
+y^2+2y=0
+\end{Bmatrix}$$</p>
+<p>Dopo aver risolto questo sistema troviamo due punti,</p>
+<p>$$P_1=(0,0)$$
+$$P_2=(0,-2)$$</p>
+<p>Ora calcoliamo le derivate seconde :</p>
+<p>$$f_{xx}=8e^{y}$$
+$$f_{yy}=e^{y}(4x^2+y^2+4y+2)$$
+$$f_{xy}=8xe^{y}$$</p>
+<p>Adesso calcoliamo gli hessiani nei punti individuati</p>
+<p>$$H(P_{1})=\begin{vmatrix}
+8e^{y} &amp; 8xe^{y}\
+8xe^{y} &amp; e^{y}(4x^2+y^2+4y+2)
+\end{vmatrix}
+=16&gt;0$$</p>
+<p>$$H(P_{2})=\begin{vmatrix}
+8e^{y} &amp; 8xe^{y}\
+8xe^{y} &amp; e^{y}(4x^2+y^2+4y+2)
+\end{vmatrix}
+=-1.17&lt;0$$</p>
+<p>Dato che il primo valore dell&rsquo;hessiano e&rsquo; positivo e il determinante e&rsquo; positivo, il punto P1 sara&rsquo; di minimo mentre P2 sarà un massimo relativo</p>
+<hr>
+<p>Ora, come prima cosa, si presenterà il libro teorico relativo ad Analisi II:</p>
+<script type="text/javascript" src= '/js/pdf-js/build/pdf.js'></script>
+
+<style>
+  #embed-pdf-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 20vh;
+     
+  }
+  
+  .pdf-canvas {
+    border: 1px solid black;
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  #the-canvas {
+    border: 1px solid black;
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  
+  .pdf-loadingWrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+  }
+  
+  .pdf-loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #d2d0d0;;
+    border-radius: 50%;
+    border-top-color: #383838;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  
+  
+  
+  
+  #overlayText {
+    word-wrap: break-word;
+    display: grid;
+    justify-content: end;
+  }
+  
+  #overlayText a {
+    position: relative;
+    top: 10px;
+    right: 4px;
+    color: #000;
+    margin: auto;
+    background-color: #eeeeee;
+    padding: 0.3em 1em;
+    border: solid 2px;
+    border-radius: 12px;
+    border-color: #00000030;
+    text-decoration: none;
+  }
+  
+  #overlayText svg {
+    height: clamp(1em, 2vw, 1.4em);
+    width:  clamp(1em, 2vw, 1.4em);
+  }
+  
+  
+  
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  </style><div class="embed-pdf-container" id="embed-pdf-container-fd7288cf">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-fd7288cf">
+        <div class="pdf-loading" id="pdf-loading-fd7288cf"></div>
+    </div>
+    <div id="overlayText">
+      <a href="https://ivanodapice.github.io/appunti/APPUNTI-DEL-CORSO-DI-ANALISI-MATEMATICA-II.pdf" aria-label="Download" download>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+            <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+        </svg>
+      </a>
+    </div>
+    <canvas class="pdf-canvas" id="pdf-canvas-fd7288cf"></canvas>
+</div>
+
+<div class="pdf-paginator" id="pdf-paginator-fd7288cf">
+    <button id="pdf-prev-fd7288cf">Previous</button>
+    <button id="pdf-next-fd7288cf">Next</button> &nbsp; &nbsp;
+    <span>
+      <span class="pdf-pagenum" id="pdf-pagenum-fd7288cf"></span> / <span class="pdf-pagecount" id="pdf-pagecount-fd7288cf"></span>
+    </span>
+    <a class="pdf-source" id="pdf-source-fd7288cf" href="https://ivanodapice.github.io/appunti/APPUNTI-DEL-CORSO-DI-ANALISI-MATEMATICA-II.pdf">[pdf]</a>
+</div>
+
+<noscript>
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-fd7288cf" href="https://ivanodapice.github.io/appunti/APPUNTI-DEL-CORSO-DI-ANALISI-MATEMATICA-II.pdf">here</a>.
+</noscript>
+
+<script type="text/javascript">
+    (function(){
+    var url = 'https:\/\/ivanodapice.github.io\/appunti\/APPUNTI-DEL-CORSO-DI-ANALISI-MATEMATICA-II.pdf';
+
+    var hidePaginator = "" === "true";
+    var hideLoader = "" === "true";
+    var selectedPageNum = parseInt("") || 1;
+
+    
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+    
+    if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "http:\/\/localhost:1313\/" + 'js/pdf-js/build/pdf.worker.js';
+
+    
+    var pdfDoc = null,
+        pageNum = selectedPageNum,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 3,
+        canvas = document.getElementById('pdf-canvas-fd7288cf'),
+        ctx = canvas.getContext('2d'),
+        paginator = document.getElementById("pdf-paginator-fd7288cf"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-fd7288cf');
+
+
+    
+    showPaginator();
+    showLoader();
+
+    
+
+    function renderPage(num) {
+      pageRendering = true;
+      
+      pdfDoc.getPage(num).then(function(page) {
+        var viewport = page.getViewport({scale: scale});
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+
+        
+        renderTask.promise.then(function() {
+          pageRendering = false;
+          showContent();
+
+          if (pageNumPending !== null) {
+            
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+      
+      document.getElementById('pdf-pagenum-fd7288cf').textContent = num;
+    }
+
+    
+
+    function showContent() {
+      loadingWrapper.style.display = 'none';
+      canvas.style.display = 'block';
+    }
+
+    
+
+    function showLoader() {
+      if(hideLoader) return
+      loadingWrapper.style.display = 'flex';
+      canvas.style.display = 'none';
+    }
+
+    
+
+    function showPaginator() {
+      if(hidePaginator) return
+      paginator.style.display = 'block';
+    }
+
+    
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    
+
+    function onPrevPage() {
+      if (pageNum <= 1) {
+        return;
+      }
+      pageNum--;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-prev-fd7288cf').addEventListener('click', onPrevPage);
+
+    
+
+    function onNextPage() {
+      if (pageNum >= pdfDoc.numPages) {
+        return;
+      }
+      pageNum++;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-next-fd7288cf').addEventListener('click', onNextPage);
+
+    
+
+    pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      var numPages = pdfDoc.numPages;
+      document.getElementById('pdf-pagecount-fd7288cf').textContent = numPages;
+
+      
+      if(pageNum > numPages) {
+        pageNum = numPages
+      }
+
+      
+      renderPage(pageNum);
+    });
+    })();
+</script>
+
+<hr>
+<p>E infine due risorse relative ad esercizi vari:</p>
+<div class="embed-pdf-container" id="embed-pdf-container-a81ae684">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-a81ae684">
+        <div class="pdf-loading" id="pdf-loading-a81ae684"></div>
+    </div>
+    <div id="overlayText">
+      <a href="https://ivanodapice.github.io/appunti/Analisi-Matematica-2-Esercizi-%28M.Boella%29.pdf" aria-label="Download" download>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+            <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+        </svg>
+      </a>
+    </div>
+    <canvas class="pdf-canvas" id="pdf-canvas-a81ae684"></canvas>
+</div>
+
+<div class="pdf-paginator" id="pdf-paginator-a81ae684">
+    <button id="pdf-prev-a81ae684">Previous</button>
+    <button id="pdf-next-a81ae684">Next</button> &nbsp; &nbsp;
+    <span>
+      <span class="pdf-pagenum" id="pdf-pagenum-a81ae684"></span> / <span class="pdf-pagecount" id="pdf-pagecount-a81ae684"></span>
+    </span>
+    <a class="pdf-source" id="pdf-source-a81ae684" href="https://ivanodapice.github.io/appunti/Analisi-Matematica-2-Esercizi-%28M.Boella%29.pdf">[pdf]</a>
+</div>
+
+<noscript>
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-a81ae684" href="https://ivanodapice.github.io/appunti/Analisi-Matematica-2-Esercizi-%28M.Boella%29.pdf">here</a>.
+</noscript>
+
+<script type="text/javascript">
+    (function(){
+    var url = 'https:\/\/ivanodapice.github.io\/appunti\/Analisi-Matematica-2-Esercizi-(M.Boella).pdf';
+
+    var hidePaginator = "" === "true";
+    var hideLoader = "" === "true";
+    var selectedPageNum = parseInt("") || 1;
+
+    
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+    
+    if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "http:\/\/localhost:1313\/" + 'js/pdf-js/build/pdf.worker.js';
+
+    
+    var pdfDoc = null,
+        pageNum = selectedPageNum,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 3,
+        canvas = document.getElementById('pdf-canvas-a81ae684'),
+        ctx = canvas.getContext('2d'),
+        paginator = document.getElementById("pdf-paginator-a81ae684"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-a81ae684');
+
+
+    
+    showPaginator();
+    showLoader();
+
+    
+
+    function renderPage(num) {
+      pageRendering = true;
+      
+      pdfDoc.getPage(num).then(function(page) {
+        var viewport = page.getViewport({scale: scale});
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+
+        
+        renderTask.promise.then(function() {
+          pageRendering = false;
+          showContent();
+
+          if (pageNumPending !== null) {
+            
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+      
+      document.getElementById('pdf-pagenum-a81ae684').textContent = num;
+    }
+
+    
+
+    function showContent() {
+      loadingWrapper.style.display = 'none';
+      canvas.style.display = 'block';
+    }
+
+    
+
+    function showLoader() {
+      if(hideLoader) return
+      loadingWrapper.style.display = 'flex';
+      canvas.style.display = 'none';
+    }
+
+    
+
+    function showPaginator() {
+      if(hidePaginator) return
+      paginator.style.display = 'block';
+    }
+
+    
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    
+
+    function onPrevPage() {
+      if (pageNum <= 1) {
+        return;
+      }
+      pageNum--;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-prev-a81ae684').addEventListener('click', onPrevPage);
+
+    
+
+    function onNextPage() {
+      if (pageNum >= pdfDoc.numPages) {
+        return;
+      }
+      pageNum++;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-next-a81ae684').addEventListener('click', onNextPage);
+
+    
+
+    pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      var numPages = pdfDoc.numPages;
+      document.getElementById('pdf-pagecount-a81ae684').textContent = numPages;
+
+      
+      if(pageNum > numPages) {
+        pageNum = numPages
+      }
+
+      
+      renderPage(pageNum);
+    });
+    })();
+</script>
+
+<div class="embed-pdf-container" id="embed-pdf-container-9d61efce">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-9d61efce">
+        <div class="pdf-loading" id="pdf-loading-9d61efce"></div>
+    </div>
+    <div id="overlayText">
+      <a href="https://ivanodapice.github.io/appunti/ESERCIZIO-SUL-PROBLEMA-DI-CAUCHY-PER-UN%27EQUAZIONE-DIFFERENZIALE%20-LINEARE-A-COEFFICIENTI-COSTANTI.pdf" aria-label="Download" download>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+            <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+        </svg>
+      </a>
+    </div>
+    <canvas class="pdf-canvas" id="pdf-canvas-9d61efce"></canvas>
+</div>
+
+<div class="pdf-paginator" id="pdf-paginator-9d61efce">
+    <button id="pdf-prev-9d61efce">Previous</button>
+    <button id="pdf-next-9d61efce">Next</button> &nbsp; &nbsp;
+    <span>
+      <span class="pdf-pagenum" id="pdf-pagenum-9d61efce"></span> / <span class="pdf-pagecount" id="pdf-pagecount-9d61efce"></span>
+    </span>
+    <a class="pdf-source" id="pdf-source-9d61efce" href="https://ivanodapice.github.io/appunti/ESERCIZIO-SUL-PROBLEMA-DI-CAUCHY-PER-UN%27EQUAZIONE-DIFFERENZIALE%20-LINEARE-A-COEFFICIENTI-COSTANTI.pdf">[pdf]</a>
+</div>
+
+<noscript>
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-9d61efce" href="https://ivanodapice.github.io/appunti/ESERCIZIO-SUL-PROBLEMA-DI-CAUCHY-PER-UN%27EQUAZIONE-DIFFERENZIALE%20-LINEARE-A-COEFFICIENTI-COSTANTI.pdf">here</a>.
+</noscript>
+
+<script type="text/javascript">
+    (function(){
+    var url = 'https:\/\/ivanodapice.github.io\/appunti\/ESERCIZIO-SUL-PROBLEMA-DI-CAUCHY-PER-UN\u0027EQUAZIONE-DIFFERENZIALE -LINEARE-A-COEFFICIENTI-COSTANTI.pdf';
+
+    var hidePaginator = "" === "true";
+    var hideLoader = "" === "true";
+    var selectedPageNum = parseInt("") || 1;
+
+    
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+    
+    if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "http:\/\/localhost:1313\/" + 'js/pdf-js/build/pdf.worker.js';
+
+    
+    var pdfDoc = null,
+        pageNum = selectedPageNum,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 3,
+        canvas = document.getElementById('pdf-canvas-9d61efce'),
+        ctx = canvas.getContext('2d'),
+        paginator = document.getElementById("pdf-paginator-9d61efce"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-9d61efce');
+
+
+    
+    showPaginator();
+    showLoader();
+
+    
+
+    function renderPage(num) {
+      pageRendering = true;
+      
+      pdfDoc.getPage(num).then(function(page) {
+        var viewport = page.getViewport({scale: scale});
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+
+        
+        renderTask.promise.then(function() {
+          pageRendering = false;
+          showContent();
+
+          if (pageNumPending !== null) {
+            
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+      
+      document.getElementById('pdf-pagenum-9d61efce').textContent = num;
+    }
+
+    
+
+    function showContent() {
+      loadingWrapper.style.display = 'none';
+      canvas.style.display = 'block';
+    }
+
+    
+
+    function showLoader() {
+      if(hideLoader) return
+      loadingWrapper.style.display = 'flex';
+      canvas.style.display = 'none';
+    }
+
+    
+
+    function showPaginator() {
+      if(hidePaginator) return
+      paginator.style.display = 'block';
+    }
+
+    
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    
+
+    function onPrevPage() {
+      if (pageNum <= 1) {
+        return;
+      }
+      pageNum--;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-prev-9d61efce').addEventListener('click', onPrevPage);
+
+    
+
+    function onNextPage() {
+      if (pageNum >= pdfDoc.numPages) {
+        return;
+      }
+      pageNum++;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-next-9d61efce').addEventListener('click', onNextPage);
+
+    
+
+    pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      var numPages = pdfDoc.numPages;
+      document.getElementById('pdf-pagecount-9d61efce').textContent = numPages;
+
+      
+      if(pageNum > numPages) {
+        pageNum = numPages
+      }
+
+      
+      renderPage(pageNum);
+    });
+    })();
+</script>
+
+
+    
+    <script src="https://giscus.app/client.js"
+        data-repo="ivanodapice/ivanodapice.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnk0MDQ2MTAzNjY="
+        data-category=""
+        data-category-id="DIC_kwDOGB3dPs4CjGfo"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    
+  </div>
+
+  
+
+
+  
+
+  
+  
+
+<div class="single-pagination">
+    <hr />
+
+    <div class="flex">
+
+        <div class="single-pagination-prev">
+            
+            <div class="single-pagination-container-prev">
+                <div class="single-pagination-text">←</div>
+                <div class="single-pagination-text">
+                    <a href="/appunti/costruzione-di-strade-ferrovie-e-aeroporti/">
+                        Costruzione di Strade, Ferrovie e Aeroporti
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+            <div class="single-pagination-container-next">
+                <div class="single-pagination-text">
+                    <a href="/appunti/rilievo/">
+                        Rilievo
+                    </a>
+                </div>
+                <div class="single-pagination-text">→</div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <hr />
+</div>
+
+
+
+  
+
+  
+
+  
+
+</div>
+
+
+      </main>
+    </div>
+
+    <footer>
+      
+
+    
+    
+    
+    <p>All content licensed under CC BY-SA 4.0 license unless otherwise stated. Copyright © 2024 <strong>Ivano D’Apice</strong>.</p>
+    
+
+
+
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
+
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false }
+      ]
+    });
+  });
+</script>
+
+    </footer>
+    
+  </body>
+
+  <script>
+
+  function isAuto() {
+    return document.body.classList.contains("auto");
+  }
+
+  function setTheme() {
+    if (!isAuto()) {
+      return
+    }
+
+    document.body.classList.remove("auto");
+    let cls = "light";
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      cls = "dark";
+    }
+
+    document.body.classList.add(cls);
+  }
+
+  function invertBody() {
+    document.body.classList.toggle("dark");
+    document.body.classList.toggle("light");
+  }
+
+  if (isAuto()) {
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(invertBody);
+  }
+
+  setTheme();
+
+</script>
+
+</html>
