@@ -1,13 +1,23 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Ivano D’Apice'
-theme = 'typo'
+theme = ["hugo-embed-pdf-shortcode", "typo"]
 
 [params]
 theme = 'dark'
 colorPalette = 'gruvebox'
 showFooter = true
 footerContent = "Your **custom** md `footer`"
+singleDateFormat = '2 January 2006'
+
+[params.giscus]
+enable = true
+repo = "https://github.com/ivanodapice/ivanodapice.github.io"
+repoid = "MDEwOlJlcG9zaXRvcnk0MDQ2MTAzNjY="
+category = "General"
+categoryid = "DIC_kwDOGB3dPs4CjGfo"
+mapping = "pathname"
+theme = "preferred_color_scheme" 
 
 [markup]
 [markup.highlight]
@@ -19,5 +29,7 @@ url = "/"
 
 [[params.menu]]
 name = "appunti"
-url = "/"
+url = "/appunti"
 
+[permalinks]
+  appunti = '/appunti/:slug'
