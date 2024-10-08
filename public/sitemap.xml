@@ -2,17 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/appunti/</loc>
+    <lastmod>2024-10-06T18:37:17+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-06T15:44:27+02:00</lastmod>
+    <lastmod>2024-10-06T18:37:17+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/appunti/scienza-delle-costruzioni/</loc>
+    <lastmod>2024-10-06T18:37:17+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/progetti/kubrick-collection/</loc>
     <lastmod>2024-10-06T15:44:27+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/progetti/</loc>
     <lastmod>2024-10-06T15:44:27+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/appunti/</loc>
-    <lastmod>2024-10-06T07:28:53+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/appunti/rilievo/</loc>
     <lastmod>2024-10-06T07:28:53+02:00</lastmod>

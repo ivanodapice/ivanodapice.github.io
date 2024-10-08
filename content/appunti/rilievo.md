@@ -1,6 +1,6 @@
 +++
-title = 'Rilievo'
-slug = "rilievo"
+title = 'Rilievo Esercitazioni'
+slug = "rilievo_esercitazioni"
 date = 2024-10-06T07:28:53+02:00
 draft = false
 math = true

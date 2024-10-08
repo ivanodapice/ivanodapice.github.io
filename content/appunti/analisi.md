@@ -26,11 +26,11 @@ $$=xy-2$$
 Mettiamo al sistema le due derivate : 
 
 $$\begin{Bmatrix}
-x^{2}+y^{2}=5\\
+x^{2}+y^{2}=5\\\\
 y=\frac{2}{x}
 \end{Bmatrix}$$
 $$\begin{Bmatrix}
-x^{2}+\frac{4}{x^{2}}=5\\
+x^{2}+\frac{4}{x^{2}}=5\\\\
 y=\frac{2}{x}
 \end{Bmatrix}$$
 
@@ -48,7 +48,7 @@ $$f_{xy}=6y$$
 Adesso calcoliamo gli hessiani nei due punti 
 
 $$H(P_{1})=\begin{vmatrix}
-6x & 6y\\
+6x & 6y\\\\
 6y & 6x
 \end{vmatrix}
 =36-144<0$$
@@ -56,7 +56,7 @@ $$H(P_{1})=\begin{vmatrix}
 Dato che il primo valore dell'hessiano e' positivo e il determinante e' negativo, il punto P1 sara' di sella 
 
 $$H(P_{2})=\begin{vmatrix}
-6x & 6y\\
+6x & 6y\\\\
 6y & 6x
 \end{vmatrix}
 =36-144<0$$
@@ -72,17 +72,17 @@ Calcoliamo le derivate prime :
 $$ f_{x}=8xe^{y}$$
 $$ f_{y}=e^{y}(4x^2+y^2+2y)$$
 $$\begin{Bmatrix}
-8xe^{y}=0\\
+8xe^{y}=0\\\\
 e^{y}(4x^2+y^2+2y)=0
 \end{Bmatrix}$$
 
 $$\begin{Bmatrix}
-8x=0\\
+8x=0\\\\
 4x^2+y^2+2y=0
 \end{Bmatrix}$$
 
 $$\begin{Bmatrix}
-x=0\\
+x=0\\\\
 y^2+2y=0
 \end{Bmatrix}$$
 
@@ -100,13 +100,13 @@ $$f_{xy}=8xe^{y}$$
 Adesso calcoliamo gli hessiani nei punti individuati
 
 $$H(P_{1})=\begin{vmatrix}
-8e^{y} & 8xe^{y}\\
+8e^{y} & 8xe^{y}\\\\
 8xe^{y} & e^{y}(4x^2+y^2+4y+2)
 \end{vmatrix}
 =16>0$$
 
 $$H(P_{2})=\begin{vmatrix}
-8e^{y} & 8xe^{y}\\
+8e^{y} & 8xe^{y}\\\\
 8xe^{y} & e^{y}(4x^2+y^2+4y+2)
 \end{vmatrix}
 =-1.17<0$$
