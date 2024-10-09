@@ -11,18 +11,18 @@ hideBackToTop = true
 
 Biblioteca dedicata a Piero Angela commissionata dal figlio Alberto in zona San Giovanni Barra. Di seguito l'impaginato in formato A1
 
-{{< embed-pdf url="https://ivanodapice.github.io/appunti/TPE_IMPAGINATO_A1.pdf" >}}
+{{< embed-pdf url="https://ivanodapice.github.io/progetti/TPE_IMPAGINATO_A1.pdf" >}}
 
 # Relazione 
 
-{{< embed-pdf url="https://ivanodapice.github.io/appunti/Relazione_TPE.pdf" >}}
+{{< embed-pdf url="https://ivanodapice.github.io/progetti/Relazione_TPE.pdf" >}}
 
 # Computo Metrico
 
-{{< embed-pdf url="https://ivanodapice.github.io/appunti/Computo Metrico_TPE.pdf" >}}
+{{< embed-pdf url="https://ivanodapice.github.io/progetti/Computo Metrico_TPE.pdf" >}}
 
 # Cronoprogramma
 
-{{< embed-pdf url="https://ivanodapice.github.io/appunti/Cronoprogramma_TPE.pdf" >}}
+{{< embed-pdf url="https://ivanodapice.github.io/progetti/Cronoprogramma_TPE.pdf" >}}
 
 > Corso Triennale di **Ingegneria Edile** (L-23), Università degli Studi di Napoli **Federico II**
