@@ -19,10 +19,10 @@ Biblioteca dedicata a Piero Angela commissionata dal figlio Alberto in zona San 
 
 # Computo Metrico
 
-{{< embed-pdf url="https://ivanodapice.github.io/progetti/Computo_Metrico_TPE.pdf" >}}
+{{< embed-pdf url="https://ivanodapice.github.io/progetti/Computo_Metrico_TPE_.pdf" >}}
 
 # Cronoprogramma
 
-{{< embed-pdf url="https://ivanodapice.github.io/progetti/Cronoprogramma_TPE.pdf" >}}
+{{< embed-pdf url="https://ivanodapice.github.io/progetti/Cronoprogramma_TPE_.pdf" >}}
 
 > Corso Triennale di **Ingegneria Edile** (L-23), Università degli Studi di Napoli **Federico II**
