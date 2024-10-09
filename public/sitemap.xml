@@ -2,11 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/appunti/</loc>
-    <lastmod>2024-10-06T18:37:17+02:00</lastmod>
+    <loc>http://localhost:1313/progetti/blu-ray-discs/</loc>
+    <lastmod>2024-10-09T16:39:44+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-06T18:37:17+02:00</lastmod>
+    <lastmod>2024-10-09T16:39:44+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/progetti/</loc>
+    <lastmod>2024-10-09T16:39:44+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/appunti/algebra_e_geometria/</loc>
+    <lastmod>2024-10-09T01:30:29+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/appunti/</loc>
+    <lastmod>2024-10-09T01:30:29+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/appunti/scienza-delle-costruzioni/</loc>
     <lastmod>2024-10-06T18:37:17+02:00</lastmod>
@@ -14,10 +23,10 @@
     <loc>http://localhost:1313/progetti/kubrick-collection/</loc>
     <lastmod>2024-10-06T15:44:27+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/progetti/</loc>
-    <lastmod>2024-10-06T15:44:27+02:00</lastmod>
+    <loc>http://localhost:1313/appunti/rilievo_esercitazioni/</loc>
+    <lastmod>2024-10-06T07:28:53+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/appunti/rilievo/</loc>
+    <loc>http://localhost:1313/appunti/rilievo_teoria/</loc>
     <lastmod>2024-10-06T07:28:53+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/appunti/analisi/</loc>
