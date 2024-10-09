@@ -19,7 +19,7 @@ Biblioteca dedicata a Piero Angela commissionata dal figlio Alberto in zona San 
 
 # Computo Metrico
 
-{{< embed-pdf url="https://ivanodapice.github.io/progetti/Computo Metrico_TPE.pdf" >}}
+{{< embed-pdf url="https://ivanodapice.github.io/progetti/Computo_Metrico_TPE.pdf" >}}
 
 # Cronoprogramma
 
