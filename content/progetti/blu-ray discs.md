@@ -1,5 +1,6 @@
 +++
 title = 'Blu Ray Discs'
+slug = "blu-ray-discs"
 date = 2024-10-09T16:39:44+02:00
 draft = false
 math = true
