@@ -9,40 +9,40 @@ hideBackToTop = true
 
 # Showcase
 
-![1](/immagini/angel's-egg-.avif)
+![1](/immagini/angel's-egg-.webp)
 
     
     Angel's Egg (天使のたまご, 1985)
     Mamoru Oshii
     Yoshitaka Amano
 
-![2](/immagini/dune-.avif)
+![2](/immagini/dune-.webp)
 
     
     Dune (2021)
     Denis Villeneuve
 
-![3](/immagini/le-samourai-.avif)
+![3](/immagini/le-samourai-.webp)
 
     Le Samouraï (1967)
     Jean-Pierre Melville
 
-![4](/immagini/millennium-actress-.avif)
+![4](/immagini/millennium-actress-.webp)
 
     Millennium Actress (千年女優, 2002)
     Satoshi Kon
 
-![5](/immagini/rikyu-.avif)
+![5](/immagini/rikyu-.webp)
 
     Death of a Tea Master (千利休 本覺坊遺文, 1989)
     Kei Kumai
 
-![6](/immagini/stalker-.avif)
+![6](/immagini/stalker-.webp)
 
     Stalker (Сталкер, 1979)
     Andrei Tarkovsky
 
-![7](/immagini/the-seventh-seal-.avif)
+![7](/immagini/the-seventh-seal-.webp)
 
     The Seventh Seal (Det sjunde inseglet, 1957)
     Ingmar Bergman
