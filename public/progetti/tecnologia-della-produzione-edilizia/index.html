@@ -41,6 +41,7 @@
 
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
   </head>
 
   
@@ -84,6 +85,13 @@
         <p class="small ">
             <a href="/progetti" >
                 /progetti
+            </a>
+        </p>
+        
+      
+        <p class="small ">
+            <a href="/fotografie/portfolio" >
+                /fotografie
             </a>
         </p>
         
@@ -935,6 +943,15 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-a65b70f2" href="
 
         <div class="single-pagination-next">
             
+            <div class="single-pagination-container-next">
+                <div class="single-pagination-text">
+                    <a href="/progetti/script-python/">
+                        Script Python
+                    </a>
+                </div>
+                <div class="single-pagination-text">→</div>
+            </div>
+            
         </div>
 
     </div>
@@ -988,7 +1005,17 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-a65b70f2" href="
 </script>
 
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    scrollLock: false
+  });
+});
+</script>
   </body>
 
   <script>

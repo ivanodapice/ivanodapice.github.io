@@ -15,6 +15,10 @@ homeIntroTitle = 'Benvenuti nel mio sito web.'
 homeIntroContent = """
 Se per qualsiasi ragione ci fosse bisogno di contattarmi, sotto ci sono le mie pagine.
 """
+[imaging]
+  anchor = "Smart"
+  quality = 75
+  resampleFilter = "Lanczos"
 
 [params.giscus]
 enable = true
@@ -61,6 +65,10 @@ url = "/appunti"
 [[params.menu]]
 name = "progetti"
 url = "/progetti"
+
+[[params.menu]]
+name = "fotografie"
+url = "/fotografie/portfolio"
 
 [permalinks]
   appunti = '/appunti/:slug'
