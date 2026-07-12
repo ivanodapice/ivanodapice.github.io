@@ -2,9 +2,12 @@
 {{- $images := resources.Match (printf "%s/*.{jpg,jpeg,webp,png}" $folder) -}}
 <div class="gallery">
 {{- range $images }}
-<a href="{{ .RelPermalink }}" class="gallery-item glightbox" data-gallery="my-gallery">
-<img src="{{ .RelPermalink }}" alt="{{ .Name | plainify }}" class="img-fluid rounded mb-2" />
-</a>
+  {{- /* Genera una miniatura ridimensionando l'immagine (es. larghezza 500px, formato webp per massimizzare le performance) */ -}}
+  {{- $thumb := .Resize "500x webp q75" -}}
+  
+  <a href="{{ .RelPermalink }}" class="gallery-item glightbox" data-gallery="my-gallery">
+    <img src="{{ $thumb.RelPermalink }}" alt="{{ .Name | plainify }}" class="img-fluid rounded mb-2" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" loading="lazy" />
+  </a>
 {{- end }}
 </div>
 
