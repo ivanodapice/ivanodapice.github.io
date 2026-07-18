@@ -3,7 +3,7 @@
 <div class="gallery">
 {{- range $images }}
   {{- /* Genera una miniatura ridimensionando l'immagine (es. larghezza 500px, formato webp per massimizzare le performance) */ -}}
-  {{- $thumb := .Resize "500x webp q75" -}}
+  {{- $thumb:=.Resize "500x webp q75" -}}
   
   <a href="{{ .RelPermalink }}" class="gallery-item glightbox" data-gallery="my-gallery">
     <img src="{{ $thumb.RelPermalink }}" alt="{{ .Name | plainify }}" class="img-fluid rounded mb-2" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" loading="lazy" />
