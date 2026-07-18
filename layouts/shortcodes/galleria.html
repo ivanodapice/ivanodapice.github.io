@@ -1,5 +1,5 @@
 {{- $folder := .Get "folder" -}}
-{{- $images := resources.Match (printf "%s/*.{jpg,jpeg,webp,png}" $folder) -}}
+{{- $images := resources.Match (printf "%s/*.{jpg,jpeg,webp,png,avif}" $folder) -}}
 <div class="gallery">
 {{- range $images }}
   {{- /* Genera una miniatura ridimensionando l'immagine (es. larghezza 500px, formato webp per massimizzare le performance) */ -}}
